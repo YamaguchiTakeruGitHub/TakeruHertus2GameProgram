@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Scene\\SceneDebugTitleUIEdit\\SceneDebugTitleUIEdit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Scene\\SceneDebugTitleUIEdit\\SceneDebugTitleUIEdit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Scene\\SceneDebugTitleUIEdit\\SceneDebugTitleUIEdit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Scene\\SceneDebugTitleUIEdit\\SceneDebugTitleUIEdit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\SceneSystem\\SceneSystemTitle\\SceneSystemTitle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Object\\SceneSystem\\SceneSystemTitle\\SceneSystemTitle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\SceneSystem\\SceneSystemTitle\\SceneSystemTitle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Object\\SceneSystem\\SceneSystemTitle\\SceneSystemTitle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 194,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SceneDebugTitleUIEdit.h",
+              "DocumentMoniker": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Scene\\SceneDebugTitleUIEdit\\SceneDebugTitleUIEdit.h",
+              "RelativeDocumentMoniker": "TakeruHertus2\\Scene\\SceneDebugTitleUIEdit\\SceneDebugTitleUIEdit.h",
+              "ToolTip": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Scene\\SceneDebugTitleUIEdit\\SceneDebugTitleUIEdit.h",
+              "RelativeToolTip": "TakeruHertus2\\Scene\\SceneDebugTitleUIEdit\\SceneDebugTitleUIEdit.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-14T06:54:40.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SceneDebugTitleUIEdit.cpp",
+              "DocumentMoniker": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Scene\\SceneDebugTitleUIEdit\\SceneDebugTitleUIEdit.cpp",
+              "RelativeDocumentMoniker": "TakeruHertus2\\Scene\\SceneDebugTitleUIEdit\\SceneDebugTitleUIEdit.cpp",
+              "ToolTip": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Scene\\SceneDebugTitleUIEdit\\SceneDebugTitleUIEdit.cpp",
+              "RelativeToolTip": "TakeruHertus2\\Scene\\SceneDebugTitleUIEdit\\SceneDebugTitleUIEdit.cpp",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-14T06:54:39.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SceneSystemTitle.cpp",
+              "DocumentMoniker": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\SceneSystem\\SceneSystemTitle\\SceneSystemTitle.cpp",
+              "RelativeDocumentMoniker": "TakeruHertus2\\Object\\SceneSystem\\SceneSystemTitle\\SceneSystemTitle.cpp",
+              "ToolTip": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\SceneSystem\\SceneSystemTitle\\SceneSystemTitle.cpp",
+              "RelativeToolTip": "TakeruHertus2\\Object\\SceneSystem\\SceneSystemTitle\\SceneSystemTitle.cpp",
+              "ViewState": "AgIAAD8AAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-14T06:54:37.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SceneSystemTitle.h",
+              "DocumentMoniker": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\SceneSystem\\SceneSystemTitle\\SceneSystemTitle.h",
+              "RelativeDocumentMoniker": "TakeruHertus2\\Object\\SceneSystem\\SceneSystemTitle\\SceneSystemTitle.h",
+              "ToolTip": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\SceneSystem\\SceneSystemTitle\\SceneSystemTitle.h",
+              "RelativeToolTip": "TakeruHertus2\\Object\\SceneSystem\\SceneSystemTitle\\SceneSystemTitle.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvx4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-14T06:54:37.318Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
