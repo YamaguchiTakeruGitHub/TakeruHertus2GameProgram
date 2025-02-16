@@ -14,7 +14,7 @@ ComponentCameraControl::ComponentCameraControl(std::shared_ptr<ComponentTransfor
 void ComponentCameraControl::Init()
 {
 	m_Idm->Init();
-	m_transform->position = VGet(0.0f, 0.0f, 0.0f);
+	m_transform->position = VGet(0.0f, 50.0f, 50.0f);
 	m_target = VGet(0, 0, 0);
 
 	m_horizontalAngle = 0.0f;

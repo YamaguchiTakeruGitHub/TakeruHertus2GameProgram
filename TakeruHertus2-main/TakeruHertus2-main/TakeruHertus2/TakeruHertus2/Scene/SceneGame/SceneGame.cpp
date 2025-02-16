@@ -31,7 +31,10 @@ void SceneGame::Update()
 	}
 	else
 	{
-		m_player->Update();
+		/*m_player->SetConversionHorizontalAngle(m_camera->GetHAngle());
+		m_player->SetConversionCosParam(m_camera->GetCosParam());
+		m_player->SetConversionSinParam(m_camera->GetSinParam());*/
+		m_player->Update(m_camera->GetHAngle(), m_camera->GetSinParam(), m_camera->GetCosParam());
 
 		m_camera->SetTag(TagCameraObject::CONTROL);
 		m_camera->SetTarget(m_player->GetPosition());
@@ -66,6 +69,8 @@ void SceneGame::Draw()
 	}
 	else
 	{
+		DrawGrid(100, 100);
+
 		m_player->Draw();
 		m_camera->Draw();
 	}

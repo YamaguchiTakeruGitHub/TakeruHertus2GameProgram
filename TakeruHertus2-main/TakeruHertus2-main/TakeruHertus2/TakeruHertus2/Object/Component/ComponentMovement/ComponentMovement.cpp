@@ -70,7 +70,7 @@ void ComponentMovement::UpdatePlayerMovement()
 
 		m_transform->angle += angleDifference * MOVEMENT::kANGLE_ROTATION_SPEED;
 		m_rightbody->direction.x = sin(targetAngleRad);
-		m_rightbody->direction.y = cos(targetAngleRad);
+		m_rightbody->direction.z = cos(targetAngleRad);
 	}
 
 	if (VSquareSize(m_rightbody->direction) > 0)
@@ -145,10 +145,10 @@ void ComponentMovement::Update()
 	/*入力デバイスの更新*/
 	m_Idm->Update();
 
-	if (m_tag == TagCharacterObject::PLAYER)
-	{
 		UpdatePlayerMovement();//行動処理
 		UpdatePlayerJump();//ジャンプ処理
+	if (m_tag == TagCharacterObject::PLAYER)
+	{
 	}
 }
 

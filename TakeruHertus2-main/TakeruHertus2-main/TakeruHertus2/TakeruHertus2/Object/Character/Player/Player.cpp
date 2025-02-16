@@ -26,27 +26,32 @@ Player::~Player()
 void Player::Init()
 {
 	Entity::InitComponent();
-	m_transform->position = VGet(0, 0, 0);
+	m_transform->position = VGet(0, 100, 0);
 
 	m_model->LoadModel("");
 
 	m_capsule->startPosition = VAdd(m_transform->position, VGet(0, m_capsule->size, 0));
 	m_capsule->endPosition = VSub(m_transform->position, VGet(0, m_capsule->size, 0));
-	m_capsule->radius = 50.0f;
+	m_capsule->radius = 20.0f;
 	m_capsule->size = 15.0f;
 }
 
-void Player::Update()
+void Player::Update(float _cHAngle, float _sinParam, float _cosParam)
 {
 	Entity::UpdateComponent();
 
-#ifdef _DEBUG
-	if (CheckHitKey(KEY_INPUT_A)) m_transform->position.x--;
-	if (CheckHitKey(KEY_INPUT_D)) m_transform->position.x++;
-	if (CheckHitKey(KEY_INPUT_W)) m_transform->position.y--;
-	if (CheckHitKey(KEY_INPUT_S)) m_transform->position.y++;
+	if (m_transform->position.y - m_capsule->size - m_capsule->radius >= 0.0f)
+	{
+		m_movement->SetIsGround(false);
+	}
+	else
+	{
+		m_movement->SetIsGround(true);
+	}
 
-#endif // _DEBUG
+	m_movement->SetConversionCameraHAngle(_cHAngle);
+	m_movement->SetConversionCosParam(_sinParam);
+	m_movement->SetConversionSinParam(_cosParam);
 
 	m_capsule->startPosition = VAdd(m_transform->position, VGet(0, m_capsule->size, 0));
 	m_capsule->endPosition = VSub(m_transform->position, VGet(0, m_capsule->size, 0));
@@ -56,7 +61,6 @@ void Player::Update()
 void Player::Draw()
 {
 	Entity::DrawComponent();
-	DrawCircle(m_transform->position.x, m_transform->position.y, 50.0f, 0xffffff, true);
 }
 
 void Player::Final()

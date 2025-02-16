@@ -31,13 +31,13 @@ private:/*インスタンスや関数定義＆タグ定義*/
 	/*コンポーネント*/
 	std::shared_ptr<ComponentTransform> m_transform;
 	std::shared_ptr<ComponentRightBody> m_rightbody;
-	
+
 	/*入力デバイス*/
 	std::shared_ptr<InputManager> m_Idm;
 
 	/*プレイヤーの行動処理*/
 	void UpdatePlayerMovement();//プレイヤーの行動処理
-	
+
 	void UpdatePlayerJump();//ジャンプ更新処理
 
 private:/*変数定義*/
@@ -48,7 +48,7 @@ private:/*変数定義*/
 	bool m_isJump;					//ジャンプしているかどうか
 	bool m_isGround;				//地面にいるかどうか
 	bool m_isMove;					//移動中かどうか
-	
+
 	float m_jumpPower;				//ジャンプ力
 	float m_jumpVelocityY;			//ジャンプの方向と速度：Ｙ
 	float m_jumpHoldTime;			//押し込み時間
@@ -68,5 +68,17 @@ public:
 	void Update() override;
 	void Draw() override;
 	void Final() override;
+
+	void SetConversionCameraHAngle(const float& _ccHAngle) { m_conversionCameraHAngle = _ccHAngle; }
+	float GetConversionCameraHAngle() { return m_conversionCameraHAngle; }
+
+	void SetConversionCosParam(const float& _cCosParam) { m_conversionCosParam = _cCosParam; }
+	float GetConversionCosParam() { return m_conversionCosParam; }
+
+	void SetConversionSinParam(const float& _cSinParam) { m_conversionSinParam = _cSinParam; }
+	float GetConversionSinParam() { return m_conversionSinParam; }
+
+	void SetIsGround(const bool& _isGround) { m_isGround = _isGround; }
+
 };
 

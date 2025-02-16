@@ -23,6 +23,7 @@ void Camera::Update()
 	Effekseer_Sync3DSetting();
 	if (m_tag == TagCameraObject::CONTROL)
 	{
+		m_cameraControl->SetTarget(m_target);
 		m_cameraControl->Update();
 	}
 

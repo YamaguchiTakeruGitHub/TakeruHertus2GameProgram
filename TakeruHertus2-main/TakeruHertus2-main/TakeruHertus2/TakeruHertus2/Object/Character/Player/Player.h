@@ -15,7 +15,7 @@ public:
 	~Player();
 
 	void Init();
-	void Update();
+	void Update(float _cHAngle, float _sinParam, float _cosParam);
 	void Draw();
 	void Final();
 
@@ -25,6 +25,8 @@ public:
 	void SetPosition(const VECTOR& _pos) { m_transform->position = _pos; }
 	VECTOR GetPosition() const { return m_transform->position; }
 
-
+	void SetConversionHorizontalAngle(const float _cHAngle) { m_movement->SetConversionCameraHAngle(_cHAngle); }
+	void SetConversionCosParam(const float _cCosParam) { m_movement->SetConversionCosParam(_cCosParam); }
+	void SetConversionSinParam(const float _cSinParam) { m_movement->SetConversionSinParam(_cSinParam); }
 };
 
