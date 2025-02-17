@@ -112,7 +112,6 @@ void ComponentAnimation::PlayBlendAnim(int _playBlendAnim)
 	{
 		m_blendPlayAnim2 = -1;
 		MV1DetachAnim(m_model->m_modelHandle, m_blendPlayAnim2);
-
 	}
 
 	// ¡‚Ü‚ÅÄ¶’†‚Ìƒ‚[ƒVƒ‡ƒ“‚P‚¾‚Á‚½‚à‚Ì‚Ìî•ñ‚ð‚Q‚ÉˆÚ“®‚·‚é
@@ -171,13 +170,6 @@ void ComponentAnimation::Update()
 
 void ComponentAnimation::Draw()
 {
-#ifdef _DEBUG
-	DrawFormatString(0, 160, 0xffffff, "animCount1:%f, animCoune2:%f", m_blendAnimPlayCount1, m_blendAnimPlayCount2);
-	DrawFormatString(0, 180, 0xffffff, "animTotalTime:%f", m_blendAnimTotalTime);
-	DrawFormatString(0, 200, 0xffffff, "animBlendRate:%f", m_blendAnimBlendRate);
-	DrawFormatString(0, 220, 0xffffff, "attachanimNum:%d", MV1GetAnimNum(m_model->m_modelHandle));
-#endif // _DEBUG
-
 }
 
 void ComponentAnimation::Final()

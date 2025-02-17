@@ -58,15 +58,23 @@ void ComponentMovement::UpdatePlayerMovement()
 		auto targetAngle = targetangleDeg - m_conversionCameraHAngle;
 		auto angleDifference = targetAngle - m_transform->angle;
 
-		if (angleDifference > 180.0f)
+		if (angleDifference >= 180.0f)
 		{
 			angleDifference -= 360.0f;
 		}
 		else
-			if (angleDifference < -180.0f)
-			{
-				angleDifference += 360.0f;
-			}
+		if (angleDifference <= -180.0f)
+		{
+			angleDifference += 360.0f;
+		}
+
+
+#ifdef _DEBUG
+		DrawFormatString(0, 40, 0xffffff, "angle:%f", angleDifference);
+
+#endif // _DEBUG
+
+
 
 		m_transform->angle += angleDifference * MOVEMENT::kANGLE_ROTATION_SPEED;
 		m_rightbody->direction.x = sin(targetAngleRad);

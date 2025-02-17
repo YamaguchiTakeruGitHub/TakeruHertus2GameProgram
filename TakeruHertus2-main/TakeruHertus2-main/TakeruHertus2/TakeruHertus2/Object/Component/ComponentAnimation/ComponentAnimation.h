@@ -7,8 +7,8 @@
 /// </summary>
 namespace ANIMATION
 {
-	static constexpr float PLAY_ANIM_BLEND_SPEED = 0.2F;//アニメーションブレンドの速度
-	static constexpr float PLAY_ANIM_SPEED = 1.0f;		//通常アニメーションの速度
+	static constexpr float PLAY_ANIM_BLEND_SPEED = 1.0f;//アニメーションブレンドの速度
+	static constexpr float PLAY_ANIM_SPEED = 0.5f;		//通常アニメーションの速度
 }
 
 /// <summary>

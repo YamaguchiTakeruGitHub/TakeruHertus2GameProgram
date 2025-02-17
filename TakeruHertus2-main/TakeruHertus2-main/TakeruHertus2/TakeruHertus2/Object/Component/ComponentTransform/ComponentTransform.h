@@ -1,6 +1,9 @@
 #pragma once
 #include "../Base/Component.h"
 
+/// <summary>
+/// 位置(position)、スケール(scale)、回転(rotation)、向き(angle)
+/// </summary>
 class ComponentTransform : public Component
 {
 public:

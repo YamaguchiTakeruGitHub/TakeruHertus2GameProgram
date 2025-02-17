@@ -20,3 +20,8 @@ namespace TagCameraObject
 {
 	static std::string CONTROL = "cameraControl";//コントロールするカメラ
 }
+
+namespace TagFontObject
+{
+	static std::string TestLetter = "testletter!";
+}

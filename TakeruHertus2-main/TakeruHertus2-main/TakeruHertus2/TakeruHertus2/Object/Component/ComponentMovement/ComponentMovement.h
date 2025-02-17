@@ -12,10 +12,10 @@
 //移動の定数
 namespace MOVEMENT
 {
-	static constexpr float k_MAXJUMPTIME = 8.0f;		//ジャンプ力
-	static constexpr float k_MINJUMPFORCE = 3.0f;		//低さ
-	static constexpr float k_MAXJUMPFORCE = 10.0f;		//高さ
-	static constexpr float k_GRAVITY = -0.3f;			//重力（いずれ別におく）
+	static constexpr float k_MAXJUMPTIME = 10.0f;		//ジャンプ力(デフォ8
+	static constexpr float k_MINJUMPFORCE = 2.0f;		//低さ（デフォ3
+	static constexpr float k_MAXJUMPFORCE = 5.0f;		//高さ(デフォ10
+	static constexpr float k_GRAVITY = -0.2f;			//重力（いずれ別におく）(デフォ-0.3
 	
 	static constexpr float k_MOVESPEED = 2.0f;			//移動速度
 
@@ -79,6 +79,14 @@ public:
 	float GetConversionSinParam() { return m_conversionSinParam; }
 
 	void SetIsGround(const bool& _isGround) { m_isGround = _isGround; }
+
+	/*動いているかどうかフラグ*/
+	void SetIsMove(const bool& _isMove) { m_isMove = _isMove; }
+	bool GetIsMove() const { return m_isMove; }
+
+	/*アングル*/
+	void SetAngle(const float& _angle) { m_transform->angle = _angle; }
+	float GetAngle() const { return m_transform->angle; }
 
 };
 

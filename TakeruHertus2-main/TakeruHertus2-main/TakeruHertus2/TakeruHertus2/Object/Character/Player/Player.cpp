@@ -1,6 +1,7 @@
 #include "Player.h"
 #include "../../GameTag.h"
 
+
 Player::Player()
 {
 	AddComponent<ComponentTransform>();
@@ -17,6 +18,10 @@ Player::Player()
 
 	AddComponent<ComponentCapsule>(m_transform);
 	m_capsule = GetComponent<ComponentCapsule>();
+
+	AddComponent<ComponentAnimation>(m_model);
+	m_animation = GetComponent<ComponentAnimation>();
+
 }
 
 Player::~Player()
@@ -26,18 +31,22 @@ Player::~Player()
 void Player::Init()
 {
 	Entity::InitComponent();
-	m_transform->position = VGet(0, 100, 0);
+	m_transform->position = VGet(100, 100, 0);
+	m_transform->scale = VGet(0.2f, 0.2f, 0.2f);
 
-	m_model->LoadModel("");
+	m_model->LoadModel("../Data/Asset/3D/Player/Player.mv1");
 
 	m_capsule->startPosition = VAdd(m_transform->position, VGet(0, m_capsule->size, 0));
 	m_capsule->endPosition = VSub(m_transform->position, VGet(0, m_capsule->size, 0));
 	m_capsule->radius = 20.0f;
 	m_capsule->size = 15.0f;
+
 }
 
-void Player::Update(float _cHAngle, float _sinParam, float _cosParam)
+void Player::Update()
 {
+	UpdateAnimation();//アニメーションの更新
+
 	Entity::UpdateComponent();
 
 	if (m_transform->position.y - m_capsule->size - m_capsule->radius >= 0.0f)
@@ -49,12 +58,12 @@ void Player::Update(float _cHAngle, float _sinParam, float _cosParam)
 		m_movement->SetIsGround(true);
 	}
 
-	m_movement->SetConversionCameraHAngle(_cHAngle);
-	m_movement->SetConversionCosParam(_sinParam);
-	m_movement->SetConversionSinParam(_cosParam);
-
 	m_capsule->startPosition = VAdd(m_transform->position, VGet(0, m_capsule->size, 0));
 	m_capsule->endPosition = VSub(m_transform->position, VGet(0, m_capsule->size, 0));
+
+
+	MV1SetRotationXYZ(m_model->m_modelHandle, VGet(0.0f, m_transform->angle * DX_PI_F / 180.0f, 0.0f));//角度をラジアンに変換してセットする
+	MV1SetScale(m_model->m_modelHandle, m_transform->scale);
 	MV1SetPosition(m_model->m_modelHandle, m_transform->position);
 }
 
@@ -66,4 +75,19 @@ void Player::Draw()
 void Player::Final()
 {
 	Entity::FinalComponent();
+}
+
+void Player::UpdateAnimation()
+{
+	if (m_movement->GetIsMove() == true)
+	{
+		m_animation->PlayAnim(8);
+		//m_animation->PlayBlendAnim(8);
+	}
+	else
+	{
+		m_animation->PlayAnim(4);
+		//m_animation->PlayBlendAnim(4);
+	}
+
 }

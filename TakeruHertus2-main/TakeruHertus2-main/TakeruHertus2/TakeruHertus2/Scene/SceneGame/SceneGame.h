@@ -5,12 +5,25 @@
 class SceneGame : public SceneBase
 {
 private:
-	std::shared_ptr<Player> m_player;//プレイヤー
-	std::shared_ptr<Camera> m_camera;//カメラ
+    /*キャラクター*/
+	std::shared_ptr<Player> m_player;       //プレイヤー
+    std::shared_ptr<EnemyFox> m_enemyFox;   //狐の敵
+    /*カメラ*/
+	std::shared_ptr<Camera> m_camera;       //カメラ
+	/*マップ*/
+	std::shared_ptr<TutorialMap> m_tutorialMap;//チュートリアルマップ
+	/*フォント*/
+	std::shared_ptr<Font> m_font;//フォント
 
 	/*変数宣言*/
 	bool m_isLoading;//ロード中かどうか
 	bool m_isOpenMenu;//メニューを開いているかどうか
+
+	void PlayerControlCamera();
+
+	/*テスト用変数*/
+	VECTOR boxPos;
+	VECTOR boxSize;
 
 public:
 	SceneGame();
@@ -21,31 +34,13 @@ public:
 	void Draw() override;
 	void Final() override;
 
+	void IsTestPhsycse();
 
-    void DrawGrid(float areaSize, int numLines)
-    {
-        VECTOR pos1, pos2;
+	bool IsTestCheckHitboxCollision(VECTOR _spherePos, float _sphereRadius, VECTOR _boxPos, VECTOR _boxSize);
+	VECTOR IsTestCheckBoxResolveCollision(VECTOR _spherePos, float _sphereRadius, VECTOR _boxPos, VECTOR _boxSize);
 
-        SetUseZBufferFlag(TRUE);
-
-        pos1 = VGet(-areaSize / 2.0f, 0.0f, -areaSize / 2.0f);
-        pos2 = VGet(-areaSize / 2.0f, 0.0f, areaSize / 2.0f);
-        for (int i = 0; i <= numLines; i++) {
-            DrawLine3D(pos1, pos2, GetColor(255, 255, 255));
-            pos1.x += areaSize / numLines;
-            pos2.x += areaSize / numLines;
-        }
-
-        pos1 = VGet(-areaSize / 2.0f, 0.0f, -areaSize / 2.0f);
-        pos2 = VGet(areaSize / 2.0f, 0.0f, -areaSize / 2.0f);
-        for (int i = 0; i < numLines; i++) {
-            DrawLine3D(pos1, pos2, GetColor(255, 255, 255));
-            pos1.z += areaSize / numLines;
-            pos2.z += areaSize / numLines;
-        }
-
-        SetUseZBufferFlag(FALSE);
-    }
+	bool CheckCapsuleCollision();
+	void ResolveCapusleCollision();
 
 };
 

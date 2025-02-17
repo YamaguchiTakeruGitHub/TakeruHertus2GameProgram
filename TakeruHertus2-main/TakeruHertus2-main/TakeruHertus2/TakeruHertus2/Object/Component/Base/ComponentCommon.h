@@ -15,9 +15,10 @@
 #include "../ComponentAnimation/ComponentAnimation.h"
 
 /*描画系*/
-#include "../ComponentGraph/ComponentGraph.h"
+#include "../ComponentGraph/ComponentGraph.h"//画像
+#include "../ComponentModel/ComponentModel.h"//３Dモデル
+#include "../ComponentFont/ComponentFont.h"	 //フォント
 
-#include "../ComponentModel/ComponentModel.h"
 
 /*物理処理*/
 #include "../ComponentPhsycs/RightBody/ComponentRightBody.h"

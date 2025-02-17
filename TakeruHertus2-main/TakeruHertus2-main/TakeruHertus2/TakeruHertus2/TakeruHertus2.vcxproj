@@ -152,6 +152,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Application\Application.cpp" />
+    <ClCompile Include="Object\Font\Font.cpp" />
+    <ClCompile Include="Object\Component\ComponentFont\ComponentFont.cpp" />
+    <ClCompile Include="Object\Component\ComponentPhsycs\Phsycs\ComponentPhsycs.cpp" />
+    <ClCompile Include="Object\Character\Enemy\EnemyFox\EnemyFox.cpp" />
+    <ClCompile Include="Object\Character\Enemy\Base\EnemyBase.cpp" />
     <ClCompile Include="InputDevice\Mouse\Mouse.cpp" />
     <ClCompile Include="Object\Camera\Camera.cpp" />
     <ClCompile Include="Object\Component\ComponentCamera\Control\ComponentCameraControl.cpp" />
@@ -182,12 +187,19 @@
     <ClCompile Include="Scene\SceneGame\SceneGame.cpp" />
     <ClCompile Include="Scene\SceneDebug\SceneDebug.cpp" />
     <ClCompile Include="Scene\SceneClear\SceneClear.cpp" />
+    <ClCompile Include="Object\Map\Tutorial\TutorialMap.cpp" />
     <ClCompile Include="UI\Select\Select.cpp" />
     <ClCompile Include="UI\UIManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application\Application.h" />
     <ClInclude Include="Application\GameConstant.h" />
+    <ClInclude Include="Object\Font\Font.h" />
+    <ClInclude Include="Object\Component\ComponentFont\ComponentFont.h" />
+    <ClInclude Include="Object\Component\ComponentPhsycs\PhsycsShapeType.h" />
+    <ClInclude Include="Object\Component\ComponentPhsycs\Phsycs\ComponentPhsycs.h" />
+    <ClInclude Include="Object\Character\Enemy\EnemyFox\EnemyFox.h" />
+    <ClInclude Include="Object\Character\Enemy\Base\EnemyBase.h" />
     <ClInclude Include="InputDevice\Mouse\Mouse.h" />
     <ClInclude Include="Object\Camera\Camera.h" />
     <ClInclude Include="Object\Component\ComponentCamera\Control\ComponentCameraControl.h" />
@@ -222,6 +234,7 @@
     <ClInclude Include="Scene\SceneDebug\SceneDebug.h" />
     <ClInclude Include="Scene\SceneClear\SceneClear.h" />
     <ClInclude Include="Scene\Base\SceneBase.h" />
+    <ClInclude Include="Object\Map\Tutorial\TutorialMap.h" />
     <ClInclude Include="UI\Select\Select.h" />
     <ClInclude Include="UI\UIManager.h" />
   </ItemGroup>
