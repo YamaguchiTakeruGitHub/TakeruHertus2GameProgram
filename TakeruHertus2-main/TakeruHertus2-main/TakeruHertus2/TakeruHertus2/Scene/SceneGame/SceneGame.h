@@ -36,11 +36,6 @@ public:
 
 	void IsTestPhsycse();
 
-	bool IsTestCheckHitboxCollision(VECTOR _spherePos, float _sphereRadius, VECTOR _boxPos, VECTOR _boxSize);
-	VECTOR IsTestCheckBoxResolveCollision(VECTOR _spherePos, float _sphereRadius, VECTOR _boxPos, VECTOR _boxSize);
-
-	bool CheckCapsuleCollision();
-	void ResolveCapusleCollision();
-
+	
 };
 

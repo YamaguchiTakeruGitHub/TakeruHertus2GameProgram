@@ -45,10 +45,10 @@ void EnemyFox::Init()
 
 	m_capsule->startPosition = VAdd(m_transform->position, VGet(0, m_capsule->size, 0));
 	m_capsule->endPosition = VSub(m_transform->position, VGet(0, m_capsule->size, 0));
-	m_capsule->radius = 15.0f;
-	m_capsule->size = 7.0f;
+	m_capsule->radius = 20.0f;
+	m_capsule->size = 15.0f;
 
-	m_model->LoadModel("../Data/Asset/3D/Enemy/Enemy_Fox/Enemy_fox.mv1");
+	m_model->LoadModel("../ Data/Asset/3D/Enemy/Enemy_Fox/Enemy_fox.mv1");
 }
 
 void EnemyFox::Update()
@@ -56,22 +56,22 @@ void EnemyFox::Update()
 	Entity::UpdateComponent();
 
 	/*‰¼*/
-	if (m_transform->position.y - m_capsule->size - m_capsule->radius > -15.0f)
+	if (m_transform->position.y - m_capsule->size - m_capsule->radius > 0.0f)
 	{
 		m_transform->position.y--;
 	}
 	else
 	{
-		m_capsule->endPosition.y = -15.0f;
+		m_capsule->endPosition.y = 0.0f;
 	}
 
 	/*ƒtƒŒ[ƒ€‚ÅŽæ“¾*/
-	m_capsule->startPosition = MV1GetFramePosition(m_model->m_modelHandle, 20);
-	m_capsule->endPosition = MV1GetFramePosition(m_model->m_modelHandle, 4);
+	//m_capsule->startPosition = MV1GetFramePosition(m_model->m_modelHandle, 20);
+	//m_capsule->endPosition = MV1GetFramePosition(m_model->m_modelHandle, 4);
 
 	/*À•W‚ÅŽæ“¾*/
-	/*m_capsule->startPosition = VAdd(m_transform->position, VGet(0, m_capsule->size, 0));
-	m_capsule->endPosition = VSub(m_transform->position, VGet(0, m_capsule->size, 0));*/
+	m_capsule->startPosition = VAdd(m_transform->position, VGet(0, m_capsule->size, 0));
+	m_capsule->endPosition = VSub(m_transform->position, VGet(0, m_capsule->size, 0));
 
 	m_transform->angle = std::atan2(-m_rightbody->direction.x, -m_rightbody->direction.z);
 

@@ -34,7 +34,7 @@ void Player::Init()
 	m_transform->position = VGet(100, 100, 0);
 	m_transform->scale = VGet(0.2f, 0.2f, 0.2f);
 
-	m_model->LoadModel("../Data/Asset/3D/Player/Player.mv1");
+	m_model->LoadModel("../ Data/Asset/3D/Player/Player.mv1");
 
 	m_capsule->startPosition = VAdd(m_transform->position, VGet(0, m_capsule->size, 0));
 	m_capsule->endPosition = VSub(m_transform->position, VGet(0, m_capsule->size, 0));

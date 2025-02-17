@@ -10,6 +10,7 @@ class Font : public Entity
 {
 private:
 	std::vector<std::shared_ptr<ComponentFont>> m_font;
+	std::vector<std::shared_ptr<ComponentTransform>> m_transform;
 
 public:
 	Font();

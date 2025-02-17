@@ -121,64 +121,9 @@ void SceneGame::Final()
 
 void SceneGame::IsTestPhsycse()
 {
-	if (CheckCapsuleCollision() == true)
-	{
-		DrawString(0, 20, "Hit", 0xffffff);
-	}
+	DrawLine3D(m_player->GetPosition(), m_enemyFox->GetPosition(), 0xff0000);
+	DrawLine3D(m_player->GetStartPos(), m_player->GetEndPos(), 0xff0000);
+	DrawLine3D(m_enemyFox->GetStartPos(), m_enemyFox->GetEndPos(), 0xff0000);
+
 }
 
-bool SceneGame::IsTestCheckHitboxCollision(VECTOR _spherePos, float _sphereRadius, VECTOR _boxPos, VECTOR _boxSize)
-{
-	VECTOR closestPoint = _spherePos;
-	closestPoint.x = max(_boxPos.x - _boxSize.x / 2, min(_spherePos.x, _boxPos.x + _boxSize.x / 2));
-	closestPoint.y = max(_boxPos.y - _boxSize.y / 2, min(_spherePos.y, _boxPos.y + _boxSize.y / 2));
-	closestPoint.z = max(_boxPos.z - _boxSize.z / 2, min(_spherePos.z, _boxPos.z + _boxSize.z / 2));
-	
-	VECTOR distance = VSub(_spherePos, closestPoint);
-
-	float distansSquared = VDot(distance, distance);
-	return distansSquared < _sphereRadius * _sphereRadius;
-}
-
-VECTOR SceneGame::IsTestCheckBoxResolveCollision(VECTOR _spherePos, float _sphereRadius, VECTOR _boxPos, VECTOR _boxSize)
-{
-	VECTOR boxMin = VSub(_boxPos, VGet(_boxSize.x / 2, _boxSize.y / 2, _boxSize.z / 2));
-	VECTOR boxMax = VAdd(_boxPos, VGet(_boxSize.x / 2, _boxSize.y / 2, _boxSize.z / 2));
-
-	// ボックスの最近接点を求める
-	VECTOR boxClosest = VGet(
-		max(boxMin.x, min(_spherePos.x, boxMax.x)),
-		max(boxMin.y, min(_spherePos.y, boxMax.y)),
-		max(boxMin.z, min(_spherePos.z, boxMax.z))
-	);
-
-	// 球の中心と最近接点の距離
-	VECTOR diff = VSub(_spherePos, boxClosest);
-	float distSq = VDot(diff, diff);  // 二乗距離
-
-	// 衝突判定
-	float radiusSq = _sphereRadius * _sphereRadius;
-	if (distSq < radiusSq)
-	{
-		float dist = std::sqrt(distSq);
-		VECTOR normal = (dist > 0.0f) ? VScale(diff, 1.0f / dist) : VGet(1.0f, 0.0f, 0.0f); // 正規化
-
-		// 押し戻し処理
-		float overlap = _sphereRadius - dist;
-		VECTOR pushBack = VScale(normal, overlap);
-
-		return VAdd(_spherePos, pushBack);
-	}
-
-	return _spherePos; // 変化なし
-}
-
-bool SceneGame::CheckCapsuleCollision()
-{
-    // 距離がカプセルの半径の和以下であれば衝突
-    return Segment_Segment_MinLength(m_player->GetStartPos(), m_player->GetEndPos(), m_enemyFox->GetStartPos(), m_enemyFox->GetEndPos()) <= (m_player->GetRadius() + m_enemyFox->GetRadius());
-}
-
-void SceneGame::ResolveCapusleCollision()
-{
-}
