@@ -125,5 +125,13 @@ void SceneGame::IsTestPhsycse()
 	DrawLine3D(m_player->GetStartPos(), m_player->GetEndPos(), 0xff0000);
 	DrawLine3D(m_enemyFox->GetStartPos(), m_enemyFox->GetEndPos(), 0xff0000);
 
+	float segmentToCapsule = Segment_Segment_MinLength(m_player->GetStartPos(), m_player->GetEndPos(), m_enemyFox->GetStartPos(), m_enemyFox->GetEndPos());
+
+	float radisSum = m_player->GetRadius() + m_enemyFox->GetRadius();
+	
+	if (segmentToCapsule <= radisSum)
+	{
+	}
+
 }
 

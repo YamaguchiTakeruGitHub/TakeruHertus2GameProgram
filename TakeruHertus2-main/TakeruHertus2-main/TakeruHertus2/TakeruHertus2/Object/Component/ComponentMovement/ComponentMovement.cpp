@@ -52,8 +52,8 @@ void ComponentMovement::UpdatePlayerMovement()
 	{
 		m_isMove = true;
 
-		auto targetAngleRad = atan2(-leftSticX, leftSticY);
-		auto targetangleDeg = targetAngleRad * 180.0f / DX_PI_F;
+		auto targetAngleRad = atan2(-leftSticX, leftSticY);//アークタンジェントで2つのユークリッド距離を角度とする
+		auto targetangleDeg = targetAngleRad * 180.0f / DX_PI_F;//ラジアンに変換
 
 		auto targetAngle = targetangleDeg - m_conversionCameraHAngle;
 		auto angleDifference = targetAngle - m_transform->angle;
@@ -74,18 +74,19 @@ void ComponentMovement::UpdatePlayerMovement()
 
 #endif // _DEBUG
 
-
-
+		/*アングルと方向を上書き*/
 		m_transform->angle += angleDifference * MOVEMENT::kANGLE_ROTATION_SPEED;
 		m_rightbody->direction.x = sin(targetAngleRad);
 		m_rightbody->direction.z = cos(targetAngleRad);
 	}
 
+	//もし動いているなら
 	if (VSquareSize(m_rightbody->direction) > 0)
 	{
 		m_rightbody->direction = VNorm(m_rightbody->direction);
 	}
 
+	//うごいていたら
 	if (m_isMove == true)
 	{
 		m_rightbody->velocity = VGet(m_rightbody->direction.x * MOVEMENT::k_MOVESPEED,
@@ -125,6 +126,7 @@ ComponentMovement::ComponentMovement(std::shared_ptr<ComponentTransform> _transf
 	, m_targetAngle				(0.0f)		//振り向き先のアングル
 	, m_saAngle					(0.0f)		//サーフェスアングル
 {
+	/*入力デバイスのインスタンス化*/
 	m_Idm = std::make_shared<InputManager>();
 }
 
@@ -153,10 +155,11 @@ void ComponentMovement::Update()
 	/*入力デバイスの更新*/
 	m_Idm->Update();
 
-		UpdatePlayerMovement();//行動処理
-		UpdatePlayerJump();//ジャンプ処理
+	/*各処理の更新(後々タグで管理する)*/
 	if (m_tag == TagCharacterObject::PLAYER)
 	{
+		UpdatePlayerMovement();	//行動処理
+		UpdatePlayerJump();		//ジャンプ処理
 	}
 }
 

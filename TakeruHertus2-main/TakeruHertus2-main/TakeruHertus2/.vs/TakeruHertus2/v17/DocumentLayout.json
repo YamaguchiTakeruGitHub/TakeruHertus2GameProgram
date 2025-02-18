@@ -1,25 +1,69 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\yamag\\OneDrive\\Desktop\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\",
+  "WorkspaceRootPath": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\yamag\\OneDrive\\Desktop\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Scene\\SceneGame\\SceneGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Scene\\SceneGame\\SceneGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentCamera\\Control\\ComponentCameraControl.cpp||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Object\\Component\\ComponentCamera\\Control\\ComponentCameraControl.cpp||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\yamag\\OneDrive\\Desktop\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Character\\Player\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Object\\Character\\Player\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentCamera\\Control\\ComponentCameraControl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Object\\Component\\ComponentCamera\\Control\\ComponentCameraControl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\yamag\\OneDrive\\Desktop\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Character\\Enemy\\EnemyFox\\EnemyFox.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentFont\\ComponentFont.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Object\\Component\\ComponentFont\\ComponentFont.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentGraph\\ComponentGraph.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Object\\Component\\ComponentGraph\\ComponentGraph.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentModel\\ComponentModel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Object\\Component\\ComponentModel\\ComponentModel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentModel\\ComponentModel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Object\\Component\\ComponentModel\\ComponentModel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentSound\\ComponentSound.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Object\\Component\\ComponentSound\\ComponentSound.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentSound\\ComponentSound.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Object\\Component\\ComponentSound\\ComponentSound.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Character\\Enemy\\EnemyFox\\EnemyFox.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Object\\Character\\Enemy\\EnemyFox\\EnemyFox.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\yamag\\OneDrive\\Desktop\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Character\\Enemy\\EnemyFox\\EnemyFox.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Character\\Enemy\\EnemyFox\\EnemyFox.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Object\\Character\\Enemy\\EnemyFox\\EnemyFox.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\yamag\\OneDrive\\Desktop\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Scene\\SceneGame\\SceneGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Character\\Player\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Object\\Character\\Player\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Character\\Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Object\\Character\\Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Scene\\SceneGame\\SceneGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Scene\\SceneGame\\SceneGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentMovement\\ComponentMovement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Object\\Component\\ComponentMovement\\ComponentMovement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentMovement\\ComponentMovement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Object\\Component\\ComponentMovement\\ComponentMovement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Scene\\SceneGame\\SceneGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2AE7A05B-AED2-4109-873F-62B3BEC86414}|TakeruHertus2\\TakeruHertus2.vcxproj|solutionrelative:TakeruHertus2\\Scene\\SceneGame\\SceneGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -30,77 +74,211 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ComponentCameraControl.cpp",
+              "DocumentMoniker": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentCamera\\Control\\ComponentCameraControl.cpp",
+              "RelativeDocumentMoniker": "TakeruHertus2\\Object\\Component\\ComponentCamera\\Control\\ComponentCameraControl.cpp",
+              "ToolTip": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentCamera\\Control\\ComponentCameraControl.cpp",
+              "RelativeToolTip": "TakeruHertus2\\Object\\Component\\ComponentCamera\\Control\\ComponentCameraControl.cpp",
+              "ViewState": "AgIAACoAAAAAAAAAAADwv0QAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-18T08:13:59.965Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Player.cpp",
-              "DocumentMoniker": "C:\\Users\\yamag\\OneDrive\\Desktop\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Character\\Player\\Player.cpp",
-              "RelativeDocumentMoniker": "TakeruHertus2\\Object\\Character\\Player\\Player.cpp",
-              "ToolTip": "C:\\Users\\yamag\\OneDrive\\Desktop\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Character\\Player\\Player.cpp",
-              "RelativeToolTip": "TakeruHertus2\\Object\\Character\\Player\\Player.cpp",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACQAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-17T13:39:16.387Z",
+              "Title": "ComponentCameraControl.h",
+              "DocumentMoniker": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentCamera\\Control\\ComponentCameraControl.h",
+              "RelativeDocumentMoniker": "TakeruHertus2\\Object\\Component\\ComponentCamera\\Control\\ComponentCameraControl.h",
+              "ToolTip": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentCamera\\Control\\ComponentCameraControl.h",
+              "RelativeToolTip": "TakeruHertus2\\Object\\Component\\ComponentCamera\\Control\\ComponentCameraControl.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-18T08:13:29.877Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ComponentFont.h",
+              "DocumentMoniker": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentFont\\ComponentFont.h",
+              "RelativeDocumentMoniker": "TakeruHertus2\\Object\\Component\\ComponentFont\\ComponentFont.h",
+              "ToolTip": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentFont\\ComponentFont.h",
+              "RelativeToolTip": "TakeruHertus2\\Object\\Component\\ComponentFont\\ComponentFont.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-18T08:13:06.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ComponentGraph.h",
+              "DocumentMoniker": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentGraph\\ComponentGraph.h",
+              "RelativeDocumentMoniker": "TakeruHertus2\\Object\\Component\\ComponentGraph\\ComponentGraph.h",
+              "ToolTip": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentGraph\\ComponentGraph.h",
+              "RelativeToolTip": "TakeruHertus2\\Object\\Component\\ComponentGraph\\ComponentGraph.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-18T08:12:18.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ComponentModel.h",
+              "DocumentMoniker": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentModel\\ComponentModel.h",
+              "RelativeDocumentMoniker": "TakeruHertus2\\Object\\Component\\ComponentModel\\ComponentModel.h",
+              "ToolTip": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentModel\\ComponentModel.h",
+              "RelativeToolTip": "TakeruHertus2\\Object\\Component\\ComponentModel\\ComponentModel.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-18T08:12:10.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ComponentModel.cpp",
+              "DocumentMoniker": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentModel\\ComponentModel.cpp",
+              "RelativeDocumentMoniker": "TakeruHertus2\\Object\\Component\\ComponentModel\\ComponentModel.cpp",
+              "ToolTip": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentModel\\ComponentModel.cpp",
+              "RelativeToolTip": "TakeruHertus2\\Object\\Component\\ComponentModel\\ComponentModel.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-18T08:12:09.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ComponentSound.h",
+              "DocumentMoniker": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentSound\\ComponentSound.h",
+              "RelativeDocumentMoniker": "TakeruHertus2\\Object\\Component\\ComponentSound\\ComponentSound.h",
+              "ToolTip": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentSound\\ComponentSound.h",
+              "RelativeToolTip": "TakeruHertus2\\Object\\Component\\ComponentSound\\ComponentSound.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-18T08:11:44.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ComponentSound.cpp",
+              "DocumentMoniker": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentSound\\ComponentSound.cpp",
+              "RelativeDocumentMoniker": "TakeruHertus2\\Object\\Component\\ComponentSound\\ComponentSound.cpp",
+              "ToolTip": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentSound\\ComponentSound.cpp",
+              "RelativeToolTip": "TakeruHertus2\\Object\\Component\\ComponentSound\\ComponentSound.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-18T08:11:43.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Character\\Player\\Player.cpp",
+              "RelativeDocumentMoniker": "TakeruHertus2\\Object\\Character\\Player\\Player.cpp",
+              "ToolTip": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Character\\Player\\Player.cpp",
+              "RelativeToolTip": "TakeruHertus2\\Object\\Character\\Player\\Player.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-18T07:28:55.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ComponentMovement.h",
+              "DocumentMoniker": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentMovement\\ComponentMovement.h",
+              "RelativeDocumentMoniker": "TakeruHertus2\\Object\\Component\\ComponentMovement\\ComponentMovement.h",
+              "ToolTip": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentMovement\\ComponentMovement.h",
+              "RelativeToolTip": "TakeruHertus2\\Object\\Component\\ComponentMovement\\ComponentMovement.h",
+              "ViewState": "AgIAAEIAAAAAAAAAAADwv1wAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-18T06:59:35.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ComponentMovement.cpp",
+              "DocumentMoniker": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentMovement\\ComponentMovement.cpp",
+              "RelativeDocumentMoniker": "TakeruHertus2\\Object\\Component\\ComponentMovement\\ComponentMovement.cpp",
+              "ToolTip": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Component\\ComponentMovement\\ComponentMovement.cpp",
+              "RelativeToolTip": "TakeruHertus2\\Object\\Component\\ComponentMovement\\ComponentMovement.cpp",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAAAFoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-18T06:59:35.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Player.h",
+              "DocumentMoniker": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Character\\Player\\Player.h",
+              "RelativeDocumentMoniker": "TakeruHertus2\\Object\\Character\\Player\\Player.h",
+              "ToolTip": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Character\\Player\\Player.h",
+              "RelativeToolTip": "TakeruHertus2\\Object\\Character\\Player\\Player.h",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-18T06:57:06.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "EnemyFox.cpp",
-              "DocumentMoniker": "C:\\Users\\yamag\\OneDrive\\Desktop\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Character\\Enemy\\EnemyFox\\EnemyFox.cpp",
+              "DocumentMoniker": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Character\\Enemy\\EnemyFox\\EnemyFox.cpp",
               "RelativeDocumentMoniker": "TakeruHertus2\\Object\\Character\\Enemy\\EnemyFox\\EnemyFox.cpp",
-              "ToolTip": "C:\\Users\\yamag\\OneDrive\\Desktop\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Character\\Enemy\\EnemyFox\\EnemyFox.cpp",
+              "ToolTip": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Character\\Enemy\\EnemyFox\\EnemyFox.cpp",
               "RelativeToolTip": "TakeruHertus2\\Object\\Character\\Enemy\\EnemyFox\\EnemyFox.cpp",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADAAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-17T13:37:54.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "EnemyFox.h",
-              "DocumentMoniker": "C:\\Users\\yamag\\OneDrive\\Desktop\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Character\\Enemy\\EnemyFox\\EnemyFox.h",
+              "DocumentMoniker": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Character\\Enemy\\EnemyFox\\EnemyFox.h",
               "RelativeDocumentMoniker": "TakeruHertus2\\Object\\Character\\Enemy\\EnemyFox\\EnemyFox.h",
-              "ToolTip": "C:\\Users\\yamag\\OneDrive\\Desktop\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Character\\Enemy\\EnemyFox\\EnemyFox.h",
+              "ToolTip": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Object\\Character\\Enemy\\EnemyFox\\EnemyFox.h",
               "RelativeToolTip": "TakeruHertus2\\Object\\Character\\Enemy\\EnemyFox\\EnemyFox.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-02-17T13:37:53.24Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "SceneGame.h",
-              "DocumentMoniker": "C:\\Users\\yamag\\OneDrive\\Desktop\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Scene\\SceneGame\\SceneGame.h",
+              "DocumentMoniker": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Scene\\SceneGame\\SceneGame.h",
               "RelativeDocumentMoniker": "TakeruHertus2\\Scene\\SceneGame\\SceneGame.h",
-              "ToolTip": "C:\\Users\\yamag\\OneDrive\\Desktop\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Scene\\SceneGame\\SceneGame.h",
+              "ToolTip": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Scene\\SceneGame\\SceneGame.h",
               "RelativeToolTip": "TakeruHertus2\\Scene\\SceneGame\\SceneGame.h",
-              "ViewState": "AgIAABoAAAAAAAAAAADwvyYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvxkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-17T12:27:23.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T12:27:23.129Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "SceneGame.cpp",
-              "DocumentMoniker": "C:\\Users\\yamag\\OneDrive\\Desktop\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Scene\\SceneGame\\SceneGame.cpp",
+              "DocumentMoniker": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Scene\\SceneGame\\SceneGame.cpp",
               "RelativeDocumentMoniker": "TakeruHertus2\\Scene\\SceneGame\\SceneGame.cpp",
-              "ToolTip": "C:\\Users\\yamag\\OneDrive\\Desktop\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Scene\\SceneGame\\SceneGame.cpp",
+              "ToolTip": "C:\\Users\\fko2347069\\Takeru\\GameProguram\\TakeruHertus2GameProgram\\TakeruHertus2-main\\TakeruHertus2-main\\TakeruHertus2\\TakeruHertus2\\Scene\\SceneGame\\SceneGame.cpp",
               "RelativeToolTip": "TakeruHertus2\\Scene\\SceneGame\\SceneGame.cpp",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAQwIEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAIQAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-17T12:27:22.595Z",
               "EditorCaption": ""

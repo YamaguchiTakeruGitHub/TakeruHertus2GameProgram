@@ -1,6 +1,9 @@
 #pragma once
 #include "../../Entity/Entity.h"
 
+/// <summary>
+/// プレイヤー
+/// </summary>
 class Player : public Entity
 {
 private:
@@ -11,6 +14,13 @@ private:
 	std::shared_ptr<ComponentCapsule> m_capsule;
 	std::shared_ptr<ComponentAnimation> m_animation;
 
+	/*変数＆関数宣言*/
+	std::string filename;//ファイルのパス
+	std::vector<std::vector<std::string>> Data;//ファイルのデータ
+
+	/// <summary>
+	/// アニメーションの更新
+	/// </summary>
 	void UpdateAnimation();
 
 public:
@@ -40,6 +50,7 @@ public:
 	void SetRadius(const float& _radius) { m_capsule->radius = _radius; }
 	float GetRadius() const { return m_capsule->radius; }
 
+	/*カメラの向きを考慮した座標の変換用セット関数*/
 	void SetConversionHorizontalAngle(const float _cHAngle) { m_movement->SetConversionCameraHAngle(_cHAngle); }
 	void SetConversionCosParam(const float _cCosParam) { m_movement->SetConversionCosParam(_cCosParam); }
 	void SetConversionSinParam(const float _cSinParam) { m_movement->SetConversionSinParam(_cSinParam); }

@@ -2,6 +2,9 @@
 #include "../Base/Component.h"
 #include "../ComponentTransform/ComponentTransform.h"
 
+/// <summary>
+/// フォントを扱うコンポーネント(引数指定：_transform)
+/// </summary>
 class ComponentFont : public Component
 {
 private:

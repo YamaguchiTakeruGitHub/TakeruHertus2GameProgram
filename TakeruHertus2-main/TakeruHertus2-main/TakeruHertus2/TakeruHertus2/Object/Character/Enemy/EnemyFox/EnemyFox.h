@@ -1,35 +1,51 @@
 #pragma once
 #include "../Base/EnemyBase.h"
 
+
 class EnemyFox : public EnemyBase
 {
 private:
+	/*コンポーネントの宣言*/
 	std::shared_ptr<ComponentTransform> m_transform;
 	std::shared_ptr<ComponentRightBody> m_rightbody;
 	std::shared_ptr<ComponentCapsule> m_capsule;
 	std::shared_ptr<ComponentModel> m_model;
 
-	void UpdateMove(VECTOR& _targetPos);
+	/*関数＆変数宣言*/
 
-	void UpdateState();
-	
+	/// <summary>
+	/// 敵の状態
+	/// </summary>
 	enum class EnemyState
 	{
-		Idel,
-		Chase,
-		Attack,
-		Retreat,
-		Deth,
-	}m_state;
+		Idel,	//とどまる
+		Chase,	//追跡
+		Attack,	//攻撃
+		Retreat,//帰還
+		Deth,	//お亡くなり
+	}m_state;//インスタンス簡易宣言
 
+	//ねらう座標
 	VECTOR m_targetPostion;
 
+	//追跡判定距離
 	float m_chaseDistance;
+
+	//攻撃判定距離
 	float m_attackDistance;
 
+	//ファイルのパス
 	std::string filename;
+
+	//ファイルのデータ
 	std::vector<std::vector<std::string>> Data;
 
+	//移動の更新
+	void UpdateMove(VECTOR& _targetPos);
+	
+	//状態の更新
+	void UpdateState();
+	
 public:
 	EnemyFox();
 	~EnemyFox() override;
@@ -42,6 +58,7 @@ public:
 	//======================================================================
 	// セッターゲッター
 	//======================================================================
+	//座標
 	void SetPosition(const VECTOR& _pos) { m_transform->position = _pos; }
 	VECTOR GetPosition() const { return m_transform->position; }
 

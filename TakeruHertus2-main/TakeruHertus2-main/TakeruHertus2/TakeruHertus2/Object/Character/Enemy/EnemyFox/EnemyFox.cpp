@@ -2,12 +2,13 @@
 #include "../../../../CSVLib/CsvData_Reading_And_Writing_Equipment.h"
 
 EnemyFox::EnemyFox()
-	: m_attackDistance(0.0f)
-	, m_chaseDistance(0.0f)
-	, filename("")
-	, Data()
-	, m_targetPostion()
+	: m_attackDistance	(0.0f)
+	, m_chaseDistance	(0.0f)
+	, m_targetPostion	(VGet(0.0f,0.0f,0.0f))
+	, filename			("")
+	, Data				()
 {
+	/*コンポーネントの生成*/
 	AddComponent<ComponentTransform>();
 	m_transform = GetComponent<ComponentTransform>();
 
@@ -28,31 +29,40 @@ EnemyFox::~EnemyFox()
 
 void EnemyFox::Init()
 {
+	/*CSVLibの初期化*/
 	filename = "../Data/GameData/EnemyData.csv";
 	Data = CSVLib::ReadCSV(filename);
-	m_attackDistance = CSVLib::GetCell_float(Data, 1, 5);
-	m_chaseDistance = CSVLib::GetCell_float(Data, 1, 4);
-	m_targetPostion = VGet(0, 0, 0);
 
-	m_state = EnemyState::Idel;
+	/*状態の初期化*/
+	m_attackDistance = CSVLib::GetCell_float(Data, 1, 5);//攻撃判定距離
+	m_chaseDistance	 = CSVLib::GetCell_float(Data, 1, 4); //追跡判定距離
 
+	m_targetPostion	 = VGet(0, 0, 0);	 //狙う対象の座標
+	m_state			 = EnemyState::Idel; //最初の状態
+
+	/*コンポーネントの初期化*/
 	Entity::InitComponent();
 
-	m_transform->position = VGet(0, 100, 0);
-	m_transform->scale = VGet(CSVLib::GetCell_float(Data, 1, 3),
-								CSVLib::GetCell_float(Data, 1, 3),
-								CSVLib::GetCell_float(Data, 1, 3));
+	/*Transformの初期化*/
+	m_transform->position	 = VGet(0, 100, 0);						//初期ポジション
+	m_transform->scale		 = VGet(CSVLib::GetCell_float(Data, 1, 3),	//大きさ＿X
+								CSVLib::GetCell_float(Data, 1, 3),	//大きさ＿Y
+								CSVLib::GetCell_float(Data, 1, 3));	//大きさ＿Z
 
-	m_capsule->startPosition = VAdd(m_transform->position, VGet(0, m_capsule->size, 0));
-	m_capsule->endPosition = VSub(m_transform->position, VGet(0, m_capsule->size, 0));
-	m_capsule->radius = 20.0f;
-	m_capsule->size = 15.0f;
+	/*カプセルの初期化*/
+	m_capsule->startPosition = VAdd(m_transform->position, VGet(0, m_capsule->size, 0));//開始地点
+	m_capsule->endPosition	 = VSub(m_transform->position, VGet(0, m_capsule->size, 0));	//終了地点
+	m_capsule->radius		 = CSVLib::GetCell_float(Data, 1, 6);//半径
+	m_capsule->size			 = CSVLib::GetCell_float(Data, 1, 7);//サイズ
 
+
+	/*モデルの初期化*/
 	m_model->LoadModel("../ Data/Asset/3D/Enemy/Enemy_Fox/Enemy_fox.mv1");
 }
 
 void EnemyFox::Update()
 {
+	/*コンポーネントの更新*/
 	Entity::UpdateComponent();
 
 	/*仮*/
@@ -69,26 +79,31 @@ void EnemyFox::Update()
 	//m_capsule->startPosition = MV1GetFramePosition(m_model->m_modelHandle, 20);
 	//m_capsule->endPosition = MV1GetFramePosition(m_model->m_modelHandle, 4);
 
-	/*座標で取得*/
+	/*カプセルの更新*/
 	m_capsule->startPosition = VAdd(m_transform->position, VGet(0, m_capsule->size, 0));
-	m_capsule->endPosition = VSub(m_transform->position, VGet(0, m_capsule->size, 0));
+	m_capsule->endPosition	 = VSub(m_transform->position, VGet(0, m_capsule->size, 0));
 
-	m_transform->angle = std::atan2(-m_rightbody->direction.x, -m_rightbody->direction.z);
+	/*アングルの更新*/
+	m_transform->angle		 = std::atan2(-m_rightbody->direction.x, -m_rightbody->direction.z);//アークタンジェント、ユークリッド距離で向きに変換
 
+	/*状態の更新*/
 	UpdateState();
 
-	MV1SetScale(m_model->m_modelHandle, m_transform->scale);
-	MV1SetRotationXYZ(m_model->m_modelHandle, VGet(0, m_transform->angle, 0));
-	MV1SetPosition(m_model->m_modelHandle, m_transform->position);
+	/*大きさ、向き、座標の更新*/
+	MV1SetScale			(m_model->m_modelHandle, m_transform->scale);
+	MV1SetRotationXYZ	(m_model->m_modelHandle, VGet(0, m_transform->angle, 0));
+	MV1SetPosition		(m_model->m_modelHandle, m_transform->position);
 }
 
 void EnemyFox::Draw()
 {
+	/*コンポーネントの描画*/
 	Entity::DrawComponent();
 }
 
 void EnemyFox::Final()
 {
+	/*コンポーネントの解放*/
 	Entity::FinalComponent();
 }
 

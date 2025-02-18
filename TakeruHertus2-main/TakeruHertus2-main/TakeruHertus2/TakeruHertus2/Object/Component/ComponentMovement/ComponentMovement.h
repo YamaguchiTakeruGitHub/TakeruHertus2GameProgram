@@ -88,5 +88,9 @@ public:
 	void SetAngle(const float& _angle) { m_transform->angle = _angle; }
 	float GetAngle() const { return m_transform->angle; }
 
+	/*ƒ^ƒO*/
+	void SetTag(std::string& _tag) { m_tag = _tag; }
+	std::string GetTag() const { return m_tag; }
+
 };
 

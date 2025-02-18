@@ -25,6 +25,7 @@ private:
 	VECTOR boxPos;
 	VECTOR boxSize;
 
+
 public:
 	SceneGame();
 	~SceneGame()override;

@@ -2,6 +2,9 @@
 #include "../Base/Component.h"
 #include "../ComponentTransform/ComponentTransform.h"
 
+/// <summary>
+/// 画像を扱うコンポーネント(引数指定：_transform)
+/// </summary>
 class ComponentGraph : public Component
 {
 private:

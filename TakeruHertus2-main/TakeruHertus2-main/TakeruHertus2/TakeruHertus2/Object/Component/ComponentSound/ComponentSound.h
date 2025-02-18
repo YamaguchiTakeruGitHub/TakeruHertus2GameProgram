@@ -1,6 +1,9 @@
 #pragma once
 #include "../Base/Component.h"
 
+/// <summary>
+/// サウンドの読み込み、再生、停止を扱う
+/// </summary>
 class ComponentSound : public Component
 {
 private:

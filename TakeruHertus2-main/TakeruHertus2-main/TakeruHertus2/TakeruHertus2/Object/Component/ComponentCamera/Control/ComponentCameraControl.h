@@ -3,7 +3,10 @@
 #include "../../ComponentTransform/ComponentTransform.h"
 #include "../../../../InputDevice/InputManager.h"
 
-namespace CAMERACONTROL
+/// <summary>
+/// カメラのパラメーター
+/// </summary>
+namespace CAMERACONTROLPARAMETER
 {
 	static constexpr float ANGLE_SPEED			 = 0.8f;	//旋回速度
 	static constexpr float PLAYER_TARGET_HEIGHT  = 100.0f;	//プレイヤーのY座標からどれだけ高い位置を注視点とするか
