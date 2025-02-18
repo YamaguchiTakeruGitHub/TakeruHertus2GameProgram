@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Application\Application.cpp" />
+    <ClCompile Include="MathLib\MathLib.cpp" />
     <ClCompile Include="Object\Font\Font.cpp" />
     <ClCompile Include="Object\Component\ComponentFont\ComponentFont.cpp" />
     <ClCompile Include="Object\Component\ComponentPhsycs\Phsycs\ComponentPhsycs.cpp" />
@@ -194,6 +195,7 @@
   <ItemGroup>
     <ClInclude Include="Application\Application.h" />
     <ClInclude Include="Application\GameConstant.h" />
+    <ClInclude Include="MathLib\MathLib.h" />
     <ClInclude Include="Object\Font\Font.h" />
     <ClInclude Include="Object\Component\ComponentFont\ComponentFont.h" />
     <ClInclude Include="Object\Component\ComponentPhsycs\PhsycsShapeType.h" />
