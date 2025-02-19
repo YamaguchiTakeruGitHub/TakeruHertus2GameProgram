@@ -88,7 +88,7 @@ void SceneClear::Update()
 
 		DrawLine3D(sp1, ep1, 0xffffff);
 		DrawLine3D(sp2, ep2, 0xffffff);
-	
+
 
 	if (isIntersect)
 	{

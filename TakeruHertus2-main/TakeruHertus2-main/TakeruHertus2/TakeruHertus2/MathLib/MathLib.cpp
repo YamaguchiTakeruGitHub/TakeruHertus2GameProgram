@@ -40,8 +40,7 @@ bool MathLib::CheckLineIntersection(VECTOR _posStart1, VECTOR _posEnd1, VECTOR _
 
 	VECTOR cross4 = VCross(p2_Line, p2S_To_p1E_Line);
 
-	float s1 = Segment_Segment_MinLength(_posStart1, _posEnd1, _posStart2, _posEnd2);
-	return (VDot(cross1, cross2) < s1) && (VDot(cross3, cross4) < s1);
+	return (VDot(cross1, cross2) < 0) && (VDot(cross3, cross4) < 0);
 
 	//return (VDot(cross1, cross2) < 0.0f) && (VDot(cross3, cross4) < 0.0f);
 }
