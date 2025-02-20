@@ -2,6 +2,12 @@
 
 TutorialMap::TutorialMap()
 {
+    AddComponent<ComponentTransform>();
+    m_transform = GetComponent<ComponentTransform>();
+
+    AddComponent<ComponentModel>();
+    m_model = GetComponent<ComponentModel>();
+
 }
 
 TutorialMap::~TutorialMap()
@@ -10,18 +16,25 @@ TutorialMap::~TutorialMap()
 
 void TutorialMap::Init()
 {
+    Entity::InitComponent();
+    m_transform->position = VGet(0, 0, 0);
+    m_model->LoadModel("../Data/Asset/3D/Map/PolygonHitTestMap.mv1");
+
 }
 
 void TutorialMap::Update()
 {
+    Entity::UpdateComponent();
 }
 
 void TutorialMap::Draw()
 {
+    Entity::DrawComponent();
 }
 
 void TutorialMap::Final()
 {
+    Entity::FinalComponent();
 }
 
 void TutorialMap::DrawGrid(float areaSize, int numLines, float lineHeight)

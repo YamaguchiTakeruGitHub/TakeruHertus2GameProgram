@@ -50,10 +50,8 @@ void EnemyFox::Init()
 								CSVLib::GetCell_float(Data, 1, 3));	//大きさ＿Z
 
 	/*カプセルの初期化*/
-	m_capsule->startPosition = VAdd(m_transform->position, VGet(0, m_capsule->size, 0));//開始地点
-	m_capsule->endPosition	 = VSub(m_transform->position, VGet(0, m_capsule->size, 0));	//終了地点
 	m_capsule->radius		 = CSVLib::GetCell_float(Data, 1, 6);//半径
-	m_capsule->size			 = CSVLib::GetCell_float(Data, 1, 7);//サイズ
+	m_capsule->height		 = CSVLib::GetCell_float(Data, 1, 7);//サイズ
 
 
 	/*モデルの初期化*/
@@ -66,13 +64,13 @@ void EnemyFox::Update()
 	Entity::UpdateComponent();
 
 	/*仮*/
-	if (m_transform->position.y - m_capsule->size - m_capsule->radius > 0.0f)
+	if (m_transform->position.y - m_capsule->radius > 0.0f)
 	{
 		m_transform->position.y--;
 	}
 	else
 	{
-		m_capsule->endPosition.y = 0.0f;
+		m_transform->position.y = 0.0f + m_capsule->radius;
 	}
 
 	/*フレームで取得*/
@@ -80,8 +78,6 @@ void EnemyFox::Update()
 	//m_capsule->endPosition = MV1GetFramePosition(m_model->m_modelHandle, 4);
 
 	/*カプセルの更新*/
-	m_capsule->startPosition = VAdd(m_transform->position, VGet(0, m_capsule->size, 0));
-	m_capsule->endPosition	 = VSub(m_transform->position, VGet(0, m_capsule->size, 0));
 
 	/*アングルの更新*/
 	m_transform->angle		 = std::atan2(-m_rightbody->direction.x, -m_rightbody->direction.z);//アークタンジェント、ユークリッド距離で向きに変換

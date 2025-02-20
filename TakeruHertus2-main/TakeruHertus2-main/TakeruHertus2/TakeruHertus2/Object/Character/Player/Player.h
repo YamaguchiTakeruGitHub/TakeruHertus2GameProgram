@@ -35,20 +35,39 @@ public:
 	//======================================================================
 	// セッターゲッター
 	//======================================================================
+	//ポジション
 	void SetPosition(const VECTOR& _pos) { m_transform->position = _pos; }
 	VECTOR GetPosition() const { return m_transform->position; }
 
-	//カプセルの開始地点
-	void SetStartPos(const VECTOR& _startPos) { m_capsule->startPosition = _startPos; }
-	VECTOR GetStartPos() const { return m_capsule->startPosition; }
+	//ヴェロシティ
+	void SetVelocity(const VECTOR& _velocity) { m_rightbody->velocity = _velocity; }
+	VECTOR GetVelocity() const { return m_rightbody->velocity; }
 
-	//カプセルの終了地点
-	void SetEndPos(const VECTOR& _endPos) { m_capsule->endPosition = _endPos; }
-	VECTOR GetEndPos() const { return m_capsule->endPosition; }
+	//カプセルの高さ
+	float GetCapsuleHeight() const { return m_capsule->height; }
 
 	//カプセルの半径
 	void SetRadius(const float& _radius) { m_capsule->radius = _radius; }
 	float GetRadius() const { return m_capsule->radius; }
+
+
+
+	/*Movement系*/
+	
+	//移動中か
+	void SetIsMove(const bool& _isMove) { m_movement->SetIsMove(_isMove); }
+	bool GetIsMove() const { return m_movement->GetIsMove(); }
+
+	//ジャンプ中か
+	void SetIsJump(const bool& _isJump) { m_movement->SetIsJump(_isJump); }
+	bool GetIsJump() const { return m_movement->GetIsJump(); }
+
+	//ジャンプ力
+	float GetJumpPower() const { return m_movement->GetJumpPower(); }
+
+	//地面についてるか
+	void SetIsGround(const bool& _isGround) { m_movement->SetIsGround(_isGround); }
+	bool GetIsGround() const { return m_movement->GetIsGround(); }
 
 	/*カメラの向きを考慮した座標の変換用セット関数*/
 	void SetConversionHorizontalAngle(const float _cHAngle) { m_movement->SetConversionCameraHAngle(_cHAngle); }

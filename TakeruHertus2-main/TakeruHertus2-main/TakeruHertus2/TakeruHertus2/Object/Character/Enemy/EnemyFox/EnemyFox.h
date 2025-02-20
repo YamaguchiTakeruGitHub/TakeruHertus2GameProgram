@@ -66,13 +66,8 @@ public:
 	void SetTargetPosition(const VECTOR& _targetPos) { m_targetPostion = _targetPos; }
 	VECTOR GetTargetPosition() const { return m_targetPostion; }
 
-	//カプセルの開始地点
-	void SetStartPos(const VECTOR& _startPos) { m_capsule->startPosition = _startPos; }
-	VECTOR GetStartPos() const { return m_capsule->startPosition; }
-
-	//カプセルの終了地点
-	void SetEndPos(const VECTOR& _endPos) { m_capsule->endPosition = _endPos; }
-	VECTOR GetEndPos() const { return m_capsule->endPosition; }
+	//カプセルの高さ
+	float GetCapsuleHeight() const { return m_capsule->height; }
 
 	//カプセルの半径
 	void SetRadius(const float& _radius) { m_capsule->radius = _radius; }

@@ -60,13 +60,11 @@ void Player::Init()
 						      CSVLib::GetCell_float(Data, 3, 2));	//モデルのサイズZ
 
 	/*モデルの初期化*/
-	m_model->LoadModel("../Data/Asset/3D/Player/Player.mv1");
+	m_model->LoadModel("../ Data/Asset/3D/Player/Player.mv1");
 
 	/*カプセルの初期化*/
-	m_capsule->startPosition = VAdd(m_transform->position, VGet(0, m_capsule->size, 0));//カプセルの開始地点
-	m_capsule->endPosition = VSub(m_transform->position, VGet(0, m_capsule->size, 0));	//カプセルの終了地点
 	m_capsule->radius = CSVLib::GetCell_float(Data,1, 2);	//カプセルの半径
-	m_capsule->size = CSVLib::GetCell_float(Data, 2, 2);	//カプセルのサイズ
+	m_capsule->height = CSVLib::GetCell_float(Data, 2, 2);	//カプセルのサイズ
 
 }
 
@@ -79,21 +77,17 @@ void Player::Update()
 	Entity::UpdateComponent();
 
 	/*着地点の仮設置（マップの移植が完了したら移動）*/
-	if (m_transform->position.y - m_capsule->size - m_capsule->radius >= 0.0f)
-	{
-		m_movement->SetIsGround(false);//地面についていない
-	}
-	else
-	{
-		m_movement->SetIsGround(true);//地面についた
-	}
+	//if (m_transform->position.y - m_capsule->radius >= 0.0f)
+	//{
+	//	m_movement->SetIsGround(false);//地面についていない
+	//}
+	//else
+	//{
+	//	m_movement->SetIsGround(true);//地面についた
+	//}
 
 	/*行動の更新(コンストラクタ呼び出し時にタグを設定できるようにしたい)*/
 	m_movement->SetTag(TagCharacterObject::PLAYER);
-
-	/*カプセルの更新*/
-	m_capsule->startPosition = VAdd(m_transform->position, VGet(0, m_capsule->size, 0));//開始地点
-	m_capsule->endPosition = VSub(m_transform->position, VGet(0, m_capsule->size, 0));	//終了地点
 
 	/*モデルのアングルと大きさと座標を更新*/
 	MV1SetRotationXYZ(m_model->m_modelHandle, VGet(0.0f, m_transform->angle * DX_PI_F / 180.0f, 0.0f));//角度をラジアンに変換してセットする

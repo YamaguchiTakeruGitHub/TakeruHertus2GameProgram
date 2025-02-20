@@ -76,8 +76,12 @@ void ComponentMovement::UpdatePlayerMovement()
 
 		/*アングルと方向を上書き*/
 		m_transform->angle += angleDifference * MOVEMENT::kANGLE_ROTATION_SPEED;
+
 		m_rightbody->direction.x = sin(targetAngleRad);
 		m_rightbody->direction.z = cos(targetAngleRad);
+
+
+		
 	}
 
 	//もし動いているなら
@@ -89,18 +93,15 @@ void ComponentMovement::UpdatePlayerMovement()
 	//うごいていたら
 	if (m_isMove == true)
 	{
-		m_rightbody->velocity = VGet(m_rightbody->direction.x * MOVEMENT::k_MOVESPEED,
-									0.0f,
-									m_rightbody->direction.z * MOVEMENT::k_MOVESPEED);
-
+		// カメラの角度を考慮した移動ベクトルの計算
 		m_conversionSinParam = sin(m_conversionCameraHAngle / 180.0f * DX_PI_F);
 		m_conversionCosParam = cos(m_conversionCameraHAngle / 180.0f * DX_PI_F);
 
 		VECTOR tempMoveVector;
-		tempMoveVector.x = m_rightbody->velocity.x * m_conversionCosParam - m_rightbody->velocity.z * m_conversionSinParam;
+		tempMoveVector.x = m_rightbody->direction.x * m_conversionCosParam - m_rightbody->direction.z * m_conversionSinParam;
 		tempMoveVector.y = 0.0f;
-		tempMoveVector.z = m_rightbody->velocity.x * m_conversionSinParam - m_rightbody->velocity.z * m_conversionCosParam;
-		
+		tempMoveVector.z = m_rightbody->direction.x * m_conversionSinParam + m_rightbody->direction.z * m_conversionCosParam;
+
 		m_transform->position = VAdd(m_transform->position, tempMoveVector);
 	}
 

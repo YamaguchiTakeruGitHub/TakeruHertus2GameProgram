@@ -2,6 +2,9 @@
 #include "../../Base/Component.h"
 #include "../../ComponentTransform/ComponentTransform.h"
 
+/// <summary>
+/// カプセルの構造体（足元を座標とした場合の処理に対応）
+/// </summary>
 class ComponentCapsule : public Component
 {
 private:
@@ -14,9 +17,7 @@ public:
 	void Draw() override;
 	void Final() override {};
 
-	VECTOR startPosition;	//カプセルの頭
-	VECTOR endPosition;		//カプセルの足元
 	float radius;			//半径
-	float size;				//ポジションからのサイズ
+	float height;			//ポジションからの高さ
 };
 

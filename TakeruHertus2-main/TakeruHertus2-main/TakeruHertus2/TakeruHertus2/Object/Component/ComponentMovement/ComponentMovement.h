@@ -12,10 +12,12 @@
 //移動の定数
 namespace MOVEMENT
 {
-	static constexpr float k_MAXJUMPTIME = 10.0f;		//ジャンプ力(デフォ8
-	static constexpr float k_MINJUMPFORCE = 2.0f;		//低さ（デフォ3
-	static constexpr float k_MAXJUMPFORCE = 5.0f;		//高さ(デフォ10
-	static constexpr float k_GRAVITY = -0.2f;			//重力（いずれ別におく）(デフォ-0.3
+	/*現状のデフォルトは気持ちの良い操作なので変更したら死！！*/
+
+	static constexpr float k_MAXJUMPTIME = 10.0f;		//ジャンプ力(デフォ10.0f
+	static constexpr float k_MINJUMPFORCE = 2.0f;		//低さ（デフォ2.0f
+	static constexpr float k_MAXJUMPFORCE = 5.0f;		//高さ(デフォ5.0f
+	static constexpr float k_GRAVITY = -0.2f;			//重力（いずれ別におく）(デフォ-0.2f
 	
 	static constexpr float k_MOVESPEED = 2.0f;			//移動速度
 
@@ -78,11 +80,22 @@ public:
 	void SetConversionSinParam(const float& _cSinParam) { m_conversionSinParam = _cSinParam; }
 	float GetConversionSinParam() { return m_conversionSinParam; }
 
+	/*地面についているかどうか*/
 	void SetIsGround(const bool& _isGround) { m_isGround = _isGround; }
+	bool GetIsGround() const { return m_isGround; }
 
 	/*動いているかどうかフラグ*/
 	void SetIsMove(const bool& _isMove) { m_isMove = _isMove; }
 	bool GetIsMove() const { return m_isMove; }
+
+	//==========================================================
+	// ジャンプ系
+	//==========================================================
+	/*ジャンプしているかどうかフラグ*/
+	void SetIsJump(const bool& _isJump) { m_isJump = _isJump; }
+	bool GetIsJump() const { return m_isJump; }
+	/*ジャンプ力取得*/
+	float GetJumpPower() const { return m_jumpPower; }
 
 	/*アングル*/
 	void SetAngle(const float& _angle) { m_transform->angle = _angle; }

@@ -8,7 +8,9 @@ ComponentCapsule::ComponentCapsule(std::shared_ptr<ComponentTransform> _transfor
 void ComponentCapsule::Draw()
 {
 #ifdef _DEBUG
-	DrawCapsule3D(startPosition, endPosition, radius, 5, 0xff0000, 0xff0000, false);
+
+	VECTOR pos = m_transform->position;
+	DrawCapsule3D(VGet(pos.x, pos.y + height, pos.z), pos, radius, 5, 0xff0000, 0xff0000, false);
 #endif // _DEBUG
 
 }
