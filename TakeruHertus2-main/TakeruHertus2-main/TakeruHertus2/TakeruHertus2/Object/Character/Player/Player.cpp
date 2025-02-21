@@ -60,7 +60,7 @@ void Player::Init()
 						      CSVLib::GetCell_float(Data, 3, 2));	//モデルのサイズZ
 
 	/*モデルの初期化*/
-	m_model->LoadModel("../ Data/Asset/3D/Player/Player.mv1");
+	m_model->LoadModel("../Data/Asset/3D/Player/Player.mv1");
 
 	/*カプセルの初期化*/
 	m_capsule->radius = CSVLib::GetCell_float(Data,1, 2);	//カプセルの半径
@@ -72,6 +72,9 @@ void Player::Update()
 {
 	/*アニメーションの更新*/
 	UpdateAnimation();
+	
+	
+
 
 	/*コンポーネントの更新*/
 	Entity::UpdateComponent();
@@ -110,12 +113,18 @@ void Player::Final()
 void Player::UpdateAnimation()
 {
 	/*歩行中であれば*/
-	if (m_movement->GetIsMove() == true)
+	if (m_movement->GetIsMove() == true && m_movement->GetIsJump() == false)
 	{
 		m_animation->PlayAnim(8);//Moveアニメーション
 	}
-	else
+	else if (m_movement->GetIsMove() == false && m_movement->GetIsJump() == false)
 	{
 		m_animation->PlayAnim(4);//Idelアニメーション
 	}
+
+	if (m_movement->GetIsJump() == true)
+	{
+		m_animation->PlayAnim(5);//Jumpアニメーション
+	}
+
 }

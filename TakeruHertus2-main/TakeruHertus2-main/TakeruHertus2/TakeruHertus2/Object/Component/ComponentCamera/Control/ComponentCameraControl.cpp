@@ -25,6 +25,7 @@ void ComponentCameraControl::Init()
 	
 	m_cosParam			  = std::cos(m_horizontalAngle / 180.0f * DX_PI_F);//コサインパラメータ
 	m_sinParam			  = std::sin(m_horizontalAngle / 180.0f * DX_PI_F);//サインパラメーター
+
 }
 
 void ComponentCameraControl::Update()

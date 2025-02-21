@@ -10,6 +10,7 @@ VECTOR SceneClear::ProjectPointOntoLine(VECTOR P, VECTOR A, VECTOR B)
 	return VAdd(A, m_mathLib->Vector_X_float(AB_normalized, projectionLength));
 }
 
+
 SceneClear::SceneClear()
 	: graphHandle(-1)
 	, pixelShaderHandle(-1)
@@ -73,35 +74,45 @@ void SceneClear::Update()
 
 	vert[3].pos.x++;*/
 	
-	moveDirection = VGet(0, 0, 0);
-	
-	if (CheckHitKey(KEY_INPUT_UP)) moveDirection.y += 2;
-	if (CheckHitKey(KEY_INPUT_DOWN)) moveDirection.y -= 2;
-	if (CheckHitKey(KEY_INPUT_LEFT)) moveDirection.x -= 2;
-	if (CheckHitKey(KEY_INPUT_RIGHT)) moveDirection.x += 2;
+	//HitTest();
 
-	sp1 = VAdd(sp1, moveDirection);
-	//ep1 = VAdd(ep1, moveDirection);
+	if (CheckHitKey(KEY_INPUT_UP)) sp2.y += 2;
+	if (CheckHitKey(KEY_INPUT_DOWN)) sp2.y -= 2;
+	if (CheckHitKey(KEY_INPUT_LEFT)) sp2.x -= 2;
+	if (CheckHitKey(KEY_INPUT_RIGHT)) sp2.x += 2;
 
+	float ssc = Segment_Point_MinLength(sp1, ep1, sp2);
 
-	bool isIntersect = m_mathLib->CheckLineIntersection(sp1,ep1,sp2,ep2);
+	DrawSphere3D(sp2, 10.0f, 5, 0xffffff, 0xffffff, true);
 
-		DrawLine3D(sp1, ep1, 0xffffff);
-		DrawLine3D(sp2, ep2, 0xffffff);
-
-
-	if (isIntersect)
+	if (ssc <= 0.0f)
 	{
-		VECTOR projectedsp1 = ProjectPointOntoLine(sp1, sp2, ep2);
-		VECTOR projectedep1 = ProjectPointOntoLine(ep1, sp2, ep2);
-
-		sp1 = projectedsp1;
-		//ep1 = projectedep1;
-
-		DrawLine3D(sp1, ep1, 0xff0000);
-		DrawLine3D(sp2, ep2, 0xff0000);
+		DrawLine3D(sp1, ep1, 0xffffff);
 	}
+	else
+	{
+		DrawLine3D(sp1, ep1, 0xff0000);
+	}
+	
+	
+	VECTOR closestPoint = ProjectPointOntoLine(sp2, sp1, ep1);
+	
+	// Å‹ß“_‚ð•`‰æ
+	DrawSphere3D(closestPoint, 10.0f, 5, 0x00ff00, 0x00ff00, true);
 
+	VECTOR ppSub = VSub(sp2, closestPoint);
+	float ppSubSize = VSize(ppSub);
+	float rad = 20.0f;
+
+	if (VSize(closestPoint) <= VSize(sp1) && VSize(closestPoint) >= VSize(sp2) || 
+		VSize(closestPoint) <= VSize(sp1) && VSize(closestPoint) <= VSize(sp2))
+	{
+		if (ppSubSize <= rad)
+		{
+			VECTOR pushback = VScale(VNorm(ppSub), rad - ppSubSize);
+			sp2 = VAdd(sp2, pushback);
+		}
+	}
 }
 
 void SceneClear::Draw()
@@ -126,4 +137,36 @@ void SceneClear::Final()
 {
 	DeleteShader(vertexShaderHandle);
 	DeleteShader(pixelShaderHandle);
+}
+
+void SceneClear::HitTest()
+{
+	moveDirection = VGet(0, 0, 0);
+
+	if (CheckHitKey(KEY_INPUT_UP)) moveDirection.y += 2;
+	if (CheckHitKey(KEY_INPUT_DOWN)) moveDirection.y -= 2;
+	if (CheckHitKey(KEY_INPUT_LEFT)) moveDirection.x -= 2;
+	if (CheckHitKey(KEY_INPUT_RIGHT)) moveDirection.x += 2;
+
+	sp1 = VAdd(sp1, moveDirection);
+	//ep1 = VAdd(ep1, moveDirection);
+
+
+	bool isIntersect = m_mathLib->CheckLineIntersection(sp1, ep1, sp2, ep2);
+
+	DrawLine3D(sp1, ep1, 0xffffff);
+	DrawLine3D(sp2, ep2, 0xffffff);
+
+
+	if (isIntersect)
+	{
+		VECTOR projectedsp1 = ProjectPointOntoLine(sp1, sp2, ep2);
+		VECTOR projectedep1 = ProjectPointOntoLine(ep1, sp2, ep2);
+
+		sp1 = projectedsp1;
+		//ep1 = projectedep1;
+
+		DrawLine3D(sp1, ep1, 0xff0000);
+		DrawLine3D(sp2, ep2, 0xff0000);
+	}
 }

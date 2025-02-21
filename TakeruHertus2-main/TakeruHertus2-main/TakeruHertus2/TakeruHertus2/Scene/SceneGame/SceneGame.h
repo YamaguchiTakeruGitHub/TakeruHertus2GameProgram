@@ -78,7 +78,6 @@ private:
 		};
 	}
 
-
 	// 三角形の法線ベクトルを求める
 	VECTOR CalculateNormal(const VECTOR& p1, const VECTOR& p2, const VECTOR& p3) {
 		VECTOR v1 = { p2.x - p1.x, p2.y - p1.y, p2.z - p1.z };
@@ -111,36 +110,40 @@ private:
 	}
 
 	// カプセルと三角形の衝突チェック
-	bool CheckCapsuleTriangleCollision(const VECTOR& pos, float height, float radius,
-		const VECTOR& p1, const VECTOR& p2, const VECTOR& p3,
-		const VECTOR& normal) {
+	bool CheckCapsuleTriangleCollision(const VECTOR pos, float height, float radius,
+		const VECTOR p1, const VECTOR p2, const VECTOR p3, const VECTOR normal) 
+	{
+		/*法線ベクトルからposまでの距離*/
 		float d = -(normal.x * p1.x + normal.y * p1.y + normal.z * p1.z);
 
+	
 		// カプセルの線（中心軸）の最近接点
-		VECTOR top = { pos.x, pos.y + height, pos.z };
-		VECTOR bottom = { pos.x, pos.y, pos.z };
+		VECTOR top = { pos.x , pos.y + height, pos.z };//頭
+		VECTOR bottom = { pos.x, pos.y, pos.z };		//底
 
 		// カプセル軸を平面に投影
 		float distTop = PointPlaneDistance(top, normal, d);
 		float distBottom = PointPlaneDistance(bottom, normal, d);
 
+		float distSpc = 30.0f;
+
 		// カプセルの半径内にあるか判定
-		if (distTop > radius && distBottom > radius) return false;
+		if (distTop > radius + distSpc && distBottom > radius + distSpc) return false;
 
 		// 三角形の内側に最近接点があるか
 		VECTOR closestPoint = {
 			pos.x - normal.x * distBottom,
 			pos.y - normal.y * distBottom,
-			pos.z - normal.z * distBottom
+			pos.z - normal.z * distBottom 
 		};
 
 		return IsPointInTriangle(closestPoint, p1, p2, p3);
 	}
 
 	// 押し戻しベクトルを計算する関数
-	VECTOR GetPushbackVector(const VECTOR& pos, float height, float radius,
-		const VECTOR& p1, const VECTOR& p2, const VECTOR& p3,
-		const VECTOR& normal) {
+	VECTOR GetPushbackVector(const VECTOR pos, float height, float radius,
+		const VECTOR p1, const VECTOR p2, const VECTOR p3,
+		const VECTOR normal) {
 		float d = -(normal.x * p1.x + normal.y * p1.y + normal.z * p1.z);
 		VECTOR bottom = { pos.x, pos.y, pos.z };
 		float distBottom = PointPlaneDistance(bottom, normal, d);

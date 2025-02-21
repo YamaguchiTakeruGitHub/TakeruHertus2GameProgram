@@ -98,8 +98,6 @@ void SceneGame::Update()
 		m_enemyFox->SetTargetPosition(m_player->GetPosition());
 		m_enemyFox->Update();
 		m_font->Update();
-
-		/*当たり判定処理仮なのであとで移行*/
 		
 	}
 }
@@ -171,12 +169,16 @@ void SceneGame::IsTestPhsycse()
 	//上
 	VECTOR pos1 = VGet(m_player->GetPosition().x, m_player->GetPosition().y + m_player->GetCapsuleHeight(), m_player->GetPosition().z);
 	//下
-	VECTOR pos2 = m_player->GetPosition();//カプセルの下部分は座標から半径分加算するのでこれでOK
+	VECTOR pos2 = VGet(m_player->GetPosition().x, m_player->GetPosition().y/* + m_player->GetRadius()*/, m_player->GetPosition().z);//カプセルの下部分は座標から半径分加算するのでこれでOK
 
 
 	/*法線ベクトルテスト」*/
+	/*VECTOR tpos1 = VGet(100, 20, 100);
+	VECTOR tpos2 = VGet(200, 20, 400);
+	VECTOR tpos3 = VGet(200, 20, 200);*/
+
 	VECTOR tpos1 = VGet(100, 0, 100);
-	VECTOR tpos2 = VGet(200, 200, 200);
+	VECTOR tpos2 = VGet(200, 100, 200);
 	VECTOR tpos3 = VGet(200, 0, 200);
 	
 	VECTOR normal = CalculateNormal(tpos1, tpos2, tpos3);
@@ -185,8 +187,16 @@ void SceneGame::IsTestPhsycse()
 	if (CheckCapsuleTriangleCollision(m_player->GetPosition(), m_player->GetCapsuleHeight(), m_player->GetRadius(), tpos1, tpos2, tpos3, normal)) {
 		VECTOR pushback = GetPushbackVector(m_player->GetPosition(), m_player->GetCapsuleHeight(), m_player->GetRadius(), tpos1, tpos2, tpos3, normal);
 		
+		DrawFormatString(20, 40, 0xfffffff, "hit");
+
+		m_player->SetIsGround(true);
 		m_player->SetPosition(VAdd(m_player->GetPosition(), pushback));
 	}
+	else
+	{
+		m_player->SetIsGround(false);
+	}
+	
 
 	float size = 30.0f;
 
@@ -194,8 +204,11 @@ void SceneGame::IsTestPhsycse()
 
 	DrawTriangle3D(tpos1, tpos2, tpos3, 0xfffff, true);
 	DrawLine3D(center, normalEnd, 0xff0000);
-	/*法線ベクトルテストおわり*/
 
+	DrawLine3D(pos2, pos1, 0xff0000);//kap
+
+	DrawFormatString(20, 20, 0xfffffff, "nomx:%f, nomy:%f, nomz;%f", normal.x, normal.y, normal.z);
+	/*法線ベクトルテストおわり*/
 
 	m_hitDim = MV1CollCheck_Capsule(m_tutorialMap->GetModelHandle(), -1, pos1, pos2, m_player->GetRadius());//上、下、半径
 
@@ -204,8 +217,6 @@ void SceneGame::IsTestPhsycse()
 	FixNowPositionWithFloor(pos1, pos2);
 	
 	MV1CollResultPolyDimTerminate(m_hitDim);
-
-	DrawFormatString(20, 20, 0xffffff, "x:%f,y:%f,z:%f", pos2.x, pos2.y, pos2.z);
 }
 
 void SceneGame::CHeckWallAndFloor(VECTOR _po1, float _radius)
@@ -329,7 +340,7 @@ void SceneGame::FixPositionWigthWallInternal(VECTOR _pos1, VECTOR _pos2)
 				continue;
 			}
 
-			m_player->SetPosition(VAdd(m_player->GetPosition(), VScale(m_poly->Normal, 0.008f)));
+			m_player->SetPosition(VAdd(m_player->GetPosition(), VScale(m_poly->Normal, 0.08f)));
 
 			for (int k = 0; k < m_wallNum; k++)
 			{
@@ -378,7 +389,7 @@ void SceneGame::FixNowPositionWithFloor(VECTOR _pos1, VECTOR _pos2)
 
 		if (isHit)
 		{
-			m_player->SetPosition(VGet(m_player->GetPosition().x, PolyMinPosY/* - _pos2.y*/, m_player->GetPosition().z));
+			m_player->SetPosition(VGet(m_player->GetPosition().x, PolyMinPosY - _pos2.y, m_player->GetPosition().z));
 		}
 	
 	}

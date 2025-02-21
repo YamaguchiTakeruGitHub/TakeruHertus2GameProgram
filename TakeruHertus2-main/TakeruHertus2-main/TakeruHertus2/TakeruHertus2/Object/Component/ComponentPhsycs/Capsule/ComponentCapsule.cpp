@@ -10,7 +10,7 @@ void ComponentCapsule::Draw()
 #ifdef _DEBUG
 
 	VECTOR pos = m_transform->position;
-	DrawCapsule3D(VGet(pos.x, pos.y + height, pos.z), pos, radius, 5, 0xff0000, 0xff0000, false);
+	DrawCapsule3D(VGet(pos.x, pos.y + height, pos.z), VGet(pos.x, pos.y + radius, pos.z), radius, 5, 0xff0000, 0xff0000, false);
 #endif // _DEBUG
 
 }
